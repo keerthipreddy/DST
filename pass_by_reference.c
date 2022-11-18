@@ -3,7 +3,7 @@
 #define STACK_SIZE 10
 void push(int st[],int *top,int item)
  {
-  if (top==STACK_SIZE-1)
+  if (*top==STACK_SIZE-1)
   printf("stack overflow\n");
   else
   {
@@ -13,10 +13,11 @@ void push(int st[],int *top,int item)
 }
 
 
+
 int pop(int st[],int *top)
 {
  int del_item;
- if(top==-1)
+ if(*top==-1)
  printf("stack underflow\n");
  else
  {
@@ -37,9 +38,8 @@ void display(int st[],int *top)
 
 
 void main()
-{ 
+{
  int top=-1,item,ch,val_del,st[STACK_SIZE];
- top=-1;
  while(1)
  {
   printf("\n 1.PUSH 2.POP 3.DISPLAY \n");
@@ -51,9 +51,9 @@ void main()
           scanf("%d",&item);
           push(st,&top,item);
           break;
-    
+   
    case 2:val_del=pop(st,&top);
-          printf("\nThe deleted item is %d",val_del);
+          printf("\nthe deleted item is %d",val_del);
           break;
    
    case 3:display(st,&top);
