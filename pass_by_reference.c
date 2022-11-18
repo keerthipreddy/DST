@@ -53,7 +53,7 @@ void main()
           break;
     
    case 2:val_del=pop(st,&top);
-          printf("\nt\The deleted item is %d",val_del);
+          printf("\nThe deleted item is %d",val_del);
           break;
    
    case 3:display(st,&top);
