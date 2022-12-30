@@ -112,7 +112,7 @@ NODE delete_beg(NODE first)
     }
     temp=first;
     temp=temp->next;
-    printf("Item deleted is \t %d",first->value);
+    printf("Item deleted is %d",first->value);
     free(first);
     return temp;
 }
@@ -133,7 +133,7 @@ NODE delete_end(NODE first)
         curr=curr->next;
     }
     prev->next=NULL;
-    printf("Item deleted is \t %d",curr->value);
+    printf("Item deleted is %d",curr->value);
     return first;
 }
 
@@ -148,7 +148,7 @@ NODE delete_specific_value(NODE first,int key)
     curr=first;
     if(curr->value==key)
     {
-        printf("Item deleted is \t%d",curr->value);
+        printf("Item deleted is %d",curr->value);
         first=first->next;
         free(curr);
         return first;
