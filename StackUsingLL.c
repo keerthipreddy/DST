@@ -45,12 +45,12 @@ NODE delete_beg(NODE first)
     NODE temp;
     if(first==NULL)
     {
-        printf("Cannot delete\n");
+        printf("Delete not possible\n");
         return NULL;
     }
     temp=first;
     temp=temp->next;
-    printf("Item deleted=%d",first->value);
+    printf("Item deleted is %d",first->value);
     free(first);
     return temp;
 }
@@ -62,7 +62,7 @@ void display(NODE first)
 	temp=first;
 	while(temp!=NULL)
 	{
-		printf("value stored in node=%d\n",temp->value);
+		printf("value stored in node is %d\n",temp->value);
 		temp=temp->next;
 	}
 }
