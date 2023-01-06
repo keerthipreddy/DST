@@ -151,7 +151,7 @@ int main()
                     		break;	
 			case 7:first2=reverse(first2);
                     		break;	
-            case 8:display(first1);
+                        case 8:display(first1);
                     		break;
 			case 9:display(first2);
                     		break;	
